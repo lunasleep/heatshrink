@@ -85,6 +85,10 @@ int main(int argc, char **argv) {
 #include <stdio.h>
 #include <string.h>
 
+#ifdef __cplusplus
+extern "C" {
+#endif
+
 /***********
  * Options *
  ***********/
@@ -833,5 +837,9 @@ greatest_run_info greatest_info
 #endif
 
 #endif /* USE_ABBREVS */
+
+#ifdef __cplusplus
+}
+#endif
 
 #endif
